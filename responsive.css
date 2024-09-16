@@ -15,11 +15,15 @@
     .like {
         flex-basis: 100%;
     }
-
+    .like-icon {
+        text-align:center;
+    }
     .like-icon img {
-        max-width:300px;
+        max-width:200px;
         width: auto;
         height: auto;
+        margin:0 auto;
+        display:block;
     }
 
     .container {
@@ -57,6 +61,8 @@
         max-width:150px;
         width:auto;
         heigth:auto;
+        margin:0 auto;
+        display:block;
     }
 
     .txt-contents {
