@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    padding-bottom: 200px;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    border-bottom: 5px solid #3498db;
+}
+
+.intro-section h1 {
+    font-size: 3em;
+    color: #3498db;
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.info-item {
+    flex-basis: calc(50% - 20px);
+    min-width: 300px;
+    font-size: 1.5em;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.info-item strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+.like-wrapper {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 1.5em;
+}
+
+.likes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.like {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.like-icon {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.like-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.like-icon img:hover {
+    border: 2px solid #3498db;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]~.txt-contents {
+    display: none;
+}
+
+.txt-contents ul {
+    margin: 10px 0;
+}
+
+.txt-contents li {
+    margin-bottom: 5px;
+}
+
+.txt-contents ol {
+    padding-left: 20px;
+}
+
+input[type="checkbox"]:checked~div.like-icon img {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.heading h2 {
+    font-weight: normal;
+}
+
+.txt-contents {
+    font-size: 18px;
+}
+
+input[type="checkbox"]:checked~.like-icon {
+    position: static;
+}
+
+input[type="checkbox"]:checked~.txt-contents {
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    scroll-margin-top: 50vh;
+}
+
+input[type="checkbox"]:checked~.soccer-details {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+}
+
+input[type="checkbox"]:checked~.comic-details {
+    background-color: #d4edec;
+    border: 2px solid #283ba7;
+}
+
+input[type="checkbox"]:checked~.food-details {
+    background-color: #eaedd4;
+    border: 2px solid #a79c28;
+
+}
