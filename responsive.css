@@ -56,7 +56,9 @@
     .like {
         flex-basis: 100%;
     }
-
+    .like-icon {
+        text-align:center;
+    }
     .like-icon img {
         max-width:150px;
         width:auto;
