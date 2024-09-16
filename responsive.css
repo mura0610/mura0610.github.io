@@ -17,7 +17,8 @@
     }
 
     .like-icon img {
-        width: 50%;
+        max-width:300px;
+        width: auto;
         height: auto;
     }
 
@@ -54,6 +55,8 @@
 
     .like-icon img {
         max-width:150px;
+        width:auto;
+        heigth:auto;
     }
 
     .txt-contents {
